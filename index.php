@@ -95,9 +95,34 @@
     <div class="mb-3">
       <label for="covidQuestion3" class="form-label">If yes, which COVID-19 vaccine did you recieve?</label><br>
       <!--<input type="text" class="" id="covidQuestion2" name="covidQuestion3">-->
-      <input type="radio" class="" id="covidQuestion2" name="covidQuestion3"> Pfizer (2 doses)<br>
-      <input type="radio" class="" id="covidQuestion2" name="covidQuestion3"> Moderna (2 doses)<br>
-      <input type="radio" class="" id="covidQuestion2" name="covidQuestion3"> Johnson & Johnson (1 dose)
+      <input type="radio" class="" id="covidQuestion3" name="covidQuestion3"> Pfizer (2 doses)<br>
+      <input type="radio" class="" id="covidQuestion3" name="covidQuestion3"> Moderna (2 doses)<br>
+      <input type="radio" class="" id="covidQuestion3" name="covidQuestion3"> Johnson & Johnson (1 dose)
+    </div>
+    <div class="mb-3">
+      <label for="covidQuestion4" class="form-label">Have you felt any of the following after recieving the vaccine?</label><br>
+      <p>On the arm...</p>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="pain">
+      <label class="form-check-label" for="sideEffects">Pain</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="redness">
+      <label class="form-check-label" for="sideEffects">Redness</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="swelling">
+      <label class="form-check-label" for="sideEffects">Swelling</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="none">
+      <label class="form-check-label" for="sideEffects">None of the above</label><br>
+      <p>Throughout the rest of your body...</p>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="tiredness">
+      <label class="form-check-label" for="sideEffects">Tiredness</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="chills">
+      <label class="form-check-label" for="sideEffects">Chills</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="headache">
+      <label class="form-check-label" for="sideEffects">Headache</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="fever">
+      <label class="form-check-label" for="sideEffects">Fever</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="muscle">
+      <label class="form-check-label" for="sideEffects">Muscle pain</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="nausea">
+      <label class="form-check-label" for="sideEffects">Nausea</label><br>
     </div>
     <div class="mb-3">
       <p>Please check off any symptoms you've had in the past 14 days: </p>

@@ -85,15 +85,19 @@
       <label for="covidQuestion1" class="form-label">Have you been in contact with someone who has COVID in the last 14 days?</label>
       <input type="radio" class="" id="covidQuestion1" name="covidQuestion1" value="yes"> Yes
       <input type="radio" class="" id="covidQuestion1" name="covidQuestion1" value="no"> No
+      <input type="radio" class="" id="covidQuestion1" name="covidQuestion1" value="no"> I'm not sure
     </div>
     <div class="mb-3">
-      <label for="covidQuestion2" class="form-label">Have you gotten the COVID vaccine?</label>
-      <input type="radio" class="" id="covidQuestion2" name="covidQuestion2" value="yes"> Yes
+      <label for="covidQuestion2" class="form-label">Have you gotten the COVID vaccine?</label><br>
+      <input type="radio" class="" id="covidQuestion2" name="covidQuestion2" value="yes"> Yes<br>
       <input type="radio" class="" id="covidQuestion2" name="covidQuestion2" value="no"> No
     </div>
     <div class="mb-3">
-      <label for="covidQuestion3" class="form-label">If yes, which COVID-19 vaccine did you recieve?</label>
-      <input type="text" class="" id="covidQuestion2" name="covidQuestion3">
+      <label for="covidQuestion3" class="form-label">If yes, which COVID-19 vaccine did you recieve?</label><br>
+      <!--<input type="text" class="" id="covidQuestion2" name="covidQuestion3">-->
+      <input type="radio" class="" id="covidQuestion2" name="covidQuestion3"> Pfizer (2 doses)<br>
+      <input type="radio" class="" id="covidQuestion2" name="covidQuestion3"> Moderna (2 doses)<br>
+      <input type="radio" class="" id="covidQuestion2" name="covidQuestion3"> Johnson & Johnson (1 dose)
     </div>
     <div class="mb-3">
       <p>Please check off any symptoms you've had in the past 14 days: </p>
@@ -116,7 +120,7 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="muscle">
       <label class="form-check-label" for="symptoms">Muscle pain</label><br>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="fatigue">
-      <label class="form-check-label" for="symptoms">fatigue</label><br>
+      <label class="form-check-label" for="symptoms">Fatigue</label><br>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="nausea/vomit">
       <label class="form-check-label" for="symptoms">Nausea or vomiting</label><br>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="diarrhea">

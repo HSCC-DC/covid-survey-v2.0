@@ -1,3 +1,27 @@
+<?php
+    //define variables and set to empty values
+    $vaccineError= $contactError = "";
+
+    //check to see if submit button was clicked
+    if(isset($_POST["submit"]))
+    {
+        $vaccine_name = trim($_POST["covidQuestion3"]);
+        //start validation for vaccine text box - question 3
+        if(empty($vaccine_name))
+        {
+            $vaccineError="Vaccine name is required. Please try again.";
+        }
+
+        //start validation for question 1
+        if(!isset($_POST["covidQuestion1"]))
+        {
+            $contactError = "Question 1 is required. Please try again.";
+        }
+
+        //start validation for question 2
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -43,10 +67,20 @@
   </div>
 </nav>
 <div class="container">
-  <form>
+  <form method="POST">
     <div class="">
       <h1>COVID-19 Survey</h1>
     </div>
+    <?php
+        if(!empty($vaccineError))
+        {
+            echo "<p style='color:red'>" . $vaccineError . "</p>";
+        }
+        if(!empty($contactError))
+        {
+            echo "<p style='color:red'>" . $contactError . "</p>"; 
+        }
+    ?>
     <div class="mb-3">
       <label for="covidQuestion1" class="form-label">Have you been in contact with someone who has COVID in the last 14 days?</label>
       <input type="radio" class="" id="covidQuestion1" name="covidQuestion1" value="yes"> Yes
@@ -62,7 +96,7 @@
       <input type="text" class="" id="covidQuestion2" name="covidQuestion3">
     </div>
     <div class="mb-3">
-      <p>Please check off any symptoms you've had in the past 14 days: </p>
+      <p>Please check off any symptoms youve had in the past 14 days: </p>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="fever">
       <label class="form-check-label" for="symptoms">Fever</label><br>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="taste">
@@ -72,7 +106,8 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="cough">
       <label class="form-check-label" for="symptoms">Cough</label><br>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <!--IMPORTANT- FOR PHP PLEASE ADD A NAME TO YOUR SUBMIT BUTTON-->
+    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
   </form>
 </div>
   </body>

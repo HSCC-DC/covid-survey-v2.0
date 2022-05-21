@@ -109,7 +109,7 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="swelling">
       <label class="form-check-label" for="sideEffects">Swelling</label><br>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="none">
-      <label class="form-check-label" for="sideEffects">None of the above</label><br>
+      <label class="form-check-label" for="sideEffects">None of the above</label><br><br>
       <p>Throughout the rest of your body...</p>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="sideEffects" value="tiredness">
       <label class="form-check-label" for="sideEffects">Tiredness</label><br>

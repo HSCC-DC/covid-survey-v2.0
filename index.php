@@ -92,7 +92,7 @@
       <input type="radio" class="" id="covidQuestion2" name="covidQuestion2" value="no"> No
     </div>
     <div class="mb-3">
-      <label for="covidQuestion3" class="form-label">Which COVID-19 vaccine did you recieve?</label>
+      <label for="covidQuestion3" class="form-label">If yes, which COVID-19 vaccine did you recieve?</label>
       <input type="text" class="" id="covidQuestion2" name="covidQuestion3">
     </div>
     <div class="mb-3">
@@ -100,7 +100,7 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="fever">
       <label class="form-check-label" for="symptoms">Fever</label><br>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="taste">
-      <label class="form-check-label" for="symptoms">Loss of taste</label><br>
+      <label class="form-check-label" for="symptoms">Loss of smell/taste</label><br>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="breath">
       <label class="form-check-label" for="symptoms">Shortness of breath</label><br>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="cough">

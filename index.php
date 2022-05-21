@@ -58,6 +58,10 @@
       <input type="radio" class="" id="covidQuestion2" name="covidQuestion2" value="no"> No
     </div>
     <div class="mb-3">
+      <label for="covidQuestion3" class="form-label">Which COVID-19 vaccine did you recieve?</label>
+      <input type="text" class="" id="covidQuestion2" name="covidQuestion3">
+    </div>
+    <div class="mb-3">
       <p>Please check off any symptoms you've had in the past 14 days: </p>
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="fever">
       <label class="form-check-label" for="symptoms">Fever</label><br>

@@ -96,15 +96,31 @@
       <input type="text" class="" id="covidQuestion2" name="covidQuestion3">
     </div>
     <div class="mb-3">
-      <p>Please check off any symptoms youve had in the past 14 days: </p>
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="fever">
-      <label class="form-check-label" for="symptoms">Fever</label><br>
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="taste">
-      <label class="form-check-label" for="symptoms">Loss of smell/taste</label><br>
-      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="breath">
-      <label class="form-check-label" for="symptoms">Shortness of breath</label><br>
+      <p>Please check off any symptoms you've had in the past 14 days: </p>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="nose">
+      <label class="form-check-label" for="symptoms">Congestion or runny nose</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="headache">
+      <label class="form-check-label" for="symptoms">Headache</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="throat">
+      <label class="form-check-label" for="symptoms">Sore throat</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="smell/taste">
+      <label class="form-check-label" for="symptoms">New loss of smell/taste</label><br>
+
       <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="cough">
       <label class="form-check-label" for="symptoms">Cough</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="breathing">
+      <label class="form-check-label" for="symptoms">Shortness of breath and/or difficulty breathing</label><br>
+
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="fever/chills">
+      <label class="form-check-label" for="symptoms">Fever or chills</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="muscle">
+      <label class="form-check-label" for="symptoms">Muscle pain</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="fatigue">
+      <label class="form-check-label" for="symptoms">fatigue</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="nausea/vomit">
+      <label class="form-check-label" for="symptoms">Nausea or vomiting</label><br>
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" name="symptoms" value="diarrhea">
+      <label class="form-check-label" for="symptoms">Diarrhea</label>
     </div>
     <!--IMPORTANT- FOR PHP PLEASE ADD A NAME TO YOUR SUBMIT BUTTON-->
     <button type="submit" class="btn btn-primary" name="submit">Submit</button>

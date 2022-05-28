@@ -1,6 +1,7 @@
 <?php
     //define variables and set to empty values
-    $vaccineError= $contactError = $firstNameError= $lastNameError = "";
+    $vaccineError= $contactError = $firstNameError= $lastNameError = $firstNameCharError = "";
+    $emailError="";
 
     //check to see if submit button was clicked
     if(isset($_POST["submit"]))
@@ -25,6 +26,10 @@
         {
           $firstNameError="Please enter a first name.";
         }
+        else if(strlen($fname) < 2)
+        {
+          $firstNameCharError = "First name must be at least 2 characters";
+        }
 
         //starts validation for last name
         $lname=trim($_POST["lastName"]);
@@ -33,6 +38,14 @@
         if(empty($lname))
         {
           $lastNameError="Please enter last name.";
+        }
+
+        //starts validation for valid email address
+        $email = trim($_POST["email"]);
+        
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+        {
+          $emailError = "Invalid format. Please re-enter a valid email.";
         }
     }
 ?>
@@ -90,8 +103,6 @@
     //Where we display errors on user page
         if(!empty($vaccineError))
         {
-
-          
             echo "<div class='alert alert-danger' role='alert'>" . $vaccineError . "</div>";
         }
         if(!empty($contactError))
@@ -106,14 +117,24 @@
         {
             echo "<div class='alert alert-danger' role='alert'>" . $lastNameError . "</div>"; 
         }
+        if(!empty($firstNameCharError))
+        {
+            echo "<div class='alert alert-danger' role='alert'>" . $firstNameCharError . "</div>"; 
+        }
+        if(!empty($emailError))
+        {
+            echo "<div class='alert alert-danger' role='alert'>" . $emailError . "</div>"; 
+        }
     ?>
     <div class="mb-3">
       <label for="firstName" class="form-label">First Name:</label>
       <input type="text" class="" id="firstName" name="firstName">
+      <label for="lastName" class="form-label">Last Name:</label>
+      <input type="text" class="" id="lastName" name="lastName">
     </div>
     <div class="mb-3">
-    <label for="lastName" class="form-label">Last Name:</label>
-      <input type="text" class="" id="lastName" name="lastName">
+    <label for="email" class="form-label">E-mail Address:</label>
+      <input type="email" class="" id="email" name="email">
     </div>
     <div class="mb-3">
       <label for="covidQuestion1" class="form-label">Have you been in contact with someone who has COVID in the last 14 days?</label>

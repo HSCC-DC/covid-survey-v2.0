@@ -100,11 +100,11 @@
         }
         if(!empty($firstNameError))
         {
-            echo "<div class='alert alert-danger' role='alert'>" . $firstNameError . "</div"; 
+            echo "<div class='alert alert-danger' role='alert'>" . $firstNameError . "</div>"; 
         }
         if(!empty($lastNameError))
         {
-            echo "<p style='color:red'>" . $lastNameError . "</p>"; 
+            echo "<div class='alert alert-danger' role='alert'>" . $lastNameError . "</div>"; 
         }
     ?>
     <div class="mb-3">

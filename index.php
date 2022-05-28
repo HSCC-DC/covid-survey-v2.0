@@ -1,13 +1,12 @@
 <?php
     //define variables and set to empty values
-    $vaccineError= $contactError = "";
+    $vaccineError= $contactError = $firstNameError= $lastNameError = "";
 
     //check to see if submit button was clicked
     if(isset($_POST["submit"]))
     {
-        $vaccine_name = trim($_POST["covidQuestion3"]);
         //start validation for vaccine text box - question 3
-        if(empty($vaccine_name))
+        if(!isset($_POST["covidQuestion3"]))
         {
             $vaccineError="Vaccine name is required. Please try again.";
         }
@@ -18,7 +17,23 @@
             $contactError = "Question 1 is required. Please try again.";
         }
 
-        //start validation for question 2
+        //start validation for first name
+        $fname=trim($_POST["firstName"]);
+        $fname=stripslashes($fname);
+
+        if(empty($fname))
+        {
+          $firstNameError="Please enter a first name.";
+        }
+
+        //starts validation for last name
+        $lname=trim($_POST["lastName"]);
+        $lname=stripslashes($lname);
+
+        if(empty($lname))
+        {
+          $lastNameError="Please enter last name.";
+        }
     }
 ?>
 
@@ -72,15 +87,34 @@
       <h1>COVID-19 Survey</h1>
     </div>
     <?php
+    //Where we display errors on user page
         if(!empty($vaccineError))
         {
-            echo "<p style='color:red'>" . $vaccineError . "</p>";
+
+          
+            echo "<div class='alert alert-danger' role='alert'>" . $vaccineError . "</div>";
         }
         if(!empty($contactError))
         {
             echo "<p style='color:red'>" . $contactError . "</p>"; 
         }
+        if(!empty($firstNameError))
+        {
+            echo "<p style='color:red'>" . $firstNameError . "</p>"; 
+        }
+        if(!empty($lastNameError))
+        {
+            echo "<p style='color:red'>" . $lastNameError . "</p>"; 
+        }
     ?>
+    <div class="mb-3">
+      <label for="firstName" class="form-label">First Name:</label>
+      <input type="text" class="" id="firstName" name="firstName">
+    </div>
+    <div class="mb-3">
+    <label for="lastName" class="form-label">Last Name:</label>
+      <input type="text" class="" id="lastName" name="lastName">
+    </div>
     <div class="mb-3">
       <label for="covidQuestion1" class="form-label">Have you been in contact with someone who has COVID in the last 14 days?</label>
       <input type="radio" class="" id="covidQuestion1" name="covidQuestion1" value="yes"> Yes

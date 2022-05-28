@@ -96,7 +96,7 @@
         }
         if(!empty($contactError))
         {
-            echo "<p style='color:red'>" . $contactError . "</p>"; 
+            echo "<div class='alert alert-danger' role='alert'>" . $contactError . "</div>"; 
         }
         if(!empty($firstNameError))
         {

@@ -100,7 +100,7 @@
         }
         if(!empty($firstNameError))
         {
-            echo "<p style='color:red'>" . $firstNameError . "</p>"; 
+            echo "<div class='alert alert-danger' role='alert'>" . $firstNameError . "</div"; 
         }
         if(!empty($lastNameError))
         {
